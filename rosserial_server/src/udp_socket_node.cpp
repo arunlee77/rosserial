@@ -52,7 +52,7 @@ int main(int argc, char* argv[])
   std::string client_addr;
   ros::param::param<int>("~server_port", server_port, 11411);
   ros::param::param<int>("~client_port", client_port, 11411);
-  ros::param::param<std::string>("~client_addr", client_addr, "127.0.0.1");
+  ros::param::param<std::string>("~client_addr", client_addr, "192.168.30.11");
 
   boost::asio::io_service io_service;
   rosserial_server::UdpSocketSession udp_socket_session(
